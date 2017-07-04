@@ -97,16 +97,17 @@ header{
 }
 
 #site_footer nav a{
-  margin: 10px;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 600px) {
-    body {
-      background-color: black; /* Used to show transition */
-    }
 
     #logo {
       text-align: center;
+    }
+
+    #main_content{
+      margin-bottom: 20px;
     }
 
     #main_nav {
@@ -118,10 +119,42 @@ header{
     #main_nav a{
       width: 25%;
     }
+
+    #sidebar_content{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    #sidebar_content div {
+      width: 33.33%;
+    }
 }
 
 @media screen and (min-width: 1100px) {
     body {
       background-color: red; /* Used to show transition */
     }
+  header{
+    position: relative;
+  }
+    #logo {
+      float: left;
+      display: block;
+      padding: 10px 2%;
+      margin-bottom: 5px;
+      position: relative;
+    }
+    #main_content{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    #main_content ul{
+      width: auto;
+    }
+
 }
