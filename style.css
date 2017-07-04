@@ -46,7 +46,7 @@ a:hover{
     color: blue;
 }
 
-header{ 
+header{
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;
@@ -59,6 +59,11 @@ header{
     background: white;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border-radius: 5px;
+}
+
+#main_content{
+  background-color: #ddffff;
+  padding: 5px;
 }
 
 #main_nav{
@@ -75,4 +80,48 @@ header{
 
 #main_nav a:hover{
     background: #ddddff;
+}
+
+#sidebar_content{
+  margin-bottom: 5px;
+}
+
+#sidebar_content div{
+  background-color: #ffffdd;
+}
+
+#site_footer{
+  background-color: #fedcad;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#site_footer nav a{
+  margin: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+      background-color: black; /* Used to show transition */
+    }
+
+    #logo {
+      text-align: center;
+    }
+
+    #main_nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    #main_nav a{
+      width: 25%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+      background-color: red; /* Used to show transition */
+    }
 }
