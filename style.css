@@ -90,6 +90,10 @@ header{
   background-color: #ffffdd;
 }
 
+#sidebar_content ul, h3{
+  margin: 5px;
+}
+
 #site_footer{
   background-color: #fedcad;
   margin-bottom: 0px;
@@ -105,11 +109,15 @@ header{
 @media screen and (min-width: 600px) {
 
     #logo {
-      text-align: center;
+
     }
 
     #main_content{
       margin-bottom: 20px;
+    }
+
+    #main_content p{
+      max-width: 650px;
     }
 
     #main_nav {
@@ -135,9 +143,7 @@ header{
 }
 
 @media screen and (min-width: 1100px) {
-    body {
-      background-color: red; /* Used to show transition */
-    }
+
   header{
     position: relative;
     }
@@ -148,20 +154,29 @@ header{
     #logo {
       float: left;
       width: 30%;
+      text-align: center;
+      margin: -10px;
+      padding: 10px 2%;
+    }
+    #main_content {
+      display: flex;
+      justify-content: space-between;
     }
 
-    #main_content{
+    #main_content div{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      justify-content: space-around;
       margin-bottom: 20px;
+
     }
-    #main_content div ul li{
-      width: 35%;
+    #main_content ul, h2 {
+      width: 350px;
+
     }
     #main_content p{
-      width: 60%;
+      width: auto;
+      float: left;
     }
 
 }
