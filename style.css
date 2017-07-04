@@ -94,10 +94,12 @@ header{
   background-color: #fedcad;
   margin-bottom: 0px;
   text-align: center;
+
 }
 
 #site_footer nav a{
   margin-top: 10px;
+  padding: 5%;
 }
 
 @media screen and (min-width: 600px) {
@@ -138,23 +140,28 @@ header{
     }
   header{
     position: relative;
-  }
+    }
+    header {
+      display: block;
+    }
+
     #logo {
       float: left;
-      display: block;
-      padding: 10px 2%;
-      margin-bottom: 5px;
-      position: relative;
+      width: 30%;
     }
+
     #main_content{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-around;
       margin-bottom: 20px;
     }
-    #main_content ul{
-      width: auto;
+    #main_content div ul li{
+      width: 35%;
+    }
+    #main_content p{
+      width: 60%;
     }
 
 }
